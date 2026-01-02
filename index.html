@@ -1,123 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-  </style>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
 
-    <title>Richard Yue - NLP Engineer and AI Researcher</title>
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        a {
+            color: #333;
+        }
 
-    <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
+        .banner {
+            background-color: #4a4a4a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        .headshot {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #d0d0d0;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #666;
+        }
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        .banner h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
 
+        .banner h2 {
+            font-size: 1.2em;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .content h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .social-links {
+            text-align: center;
+            margin: 50px 0 30px;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #4a4a4a;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background-color: #2c3e50;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .social-btn.linkedin:hover {
+            background-color: #0077b5;
+        }
+
+        .social-btn.scholar:hover {
+            background-color: #4285f4;
+        }
+
+        .social-btn.github:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
-  
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>Richard Yue</h1>
-                        <hr class="small">
-                        <span class="subheading">NLP Engineer and AI Researcher</span>
-                    </div>
-                </div>
-            </div>
+    <div class="banner">
+        <div class="headshot">
+            <img src="img/headshot.png" alt="Richard Yue headshot" width="190" height="191">
         </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <h2>Richard Yue is an NLP-focused researcher and AI/ML engineer focused on LLMs and RAG</h2>
-                <p>Welcome to my Github site. I&#8217;ve always been fascinated by language, from living abroad in Morocco during my undergrad years to acquiring French nationality after studying the language of Moli&egrave;re in Paris. I&#8217;ve made it a point to hone my multilingual communication skills over the last decade or so, which has led to an understanding of language grammar, syntax, and reasoning that has helped me master programming languages during my transition into tech. I have nearly 10 years&#8217; experience working as a professional translator on editorial, legal, and technical texts.</p>
-                <p>With a newfound passion for computer science, I completed my master&#8217;s at Northeastern University&#8217;s Silicon Valley Campus in May 2025, where I worked as a graduate research assistant for three years with a focus on artificial intelligence and natural language processing under the guidance of Kenneth Church. Since October 2025, I have been working as a Software Engineer at Meta Fundamental AI Research (FAIR) under contract with Mindlance. Previously, I built a voice-enabled, RAG-based AI assistant and designed its physical hardware and enclosure for Nonnet AI. Prior to that, I worked applying state-of-the-art pretraining techniques, including RTD with GDES with the DeBERTav3 model on air traffic management (ATM) data during an internship at the NASA Aeronautics Research Institute (NARI). During my time at Northeastern, I dived headfirst into training encoder and autoregressive models on some interesting downstream tasks, including machine translation, toxicity classification, GLUE tasks, and question answering, often within the scope of multilingual applications. I have also fine tuned models on novel  tasks, generating technical acronyms from long forms in order to improve technical translation through post-editing, later integrating the model into a system to fact check the resulting predictions in the scientific literature.</p>
-		<p>In April 2025, I was a recipient of the <a href="https://outstandingawards.sites.northeastern.edu/2025-winners">Outstanding Student</a> and Exceptional Student Leader awards at Northeastern University.</p>
-		<p>A list of my publications is available at the Google Scholar link below.</p>
-                <h2>Other interests</h2>
-                <p>As an avid hiker, I can only go a short time without itching to get back onto a mountain or trail of some kind. I have also set myself the goal of tasting an espresso from every coffee roaster in the Bay Area. In my remaining time, you may find me tinkering with edge AI on my Jetson Orin Nano or exploring yet another beach within driving distance of the Silicon Valley.</p>
-            </div>
-        </div>
+        <h1>Richard Yue</h1>
+        <h2>NLP Engineer and AI Researcher</h2>
     </div>
 
-    <hr>
+    <div class="content">
+        <h3>Richard Yue is an NLP-focused researcher and AI/ML engineer focused on distributed training</h3>
+        <p>
+            Welcome to my Github site. I’ve always been fascinated by language, from living abroad
+            in Morocco during my undergrad years to acquiring French nationality after studying the
+            language of Molière in Paris. I’ve made it a point to hone my multilingual communication
+            skills over the last decade or so, which has led to an understanding of language grammar,
+            syntax, and reasoning that has helped me master programming languages during my transition
+            into tech. I have nearly 10 years’ experience working as a professional translator on
+            editorial, legal, and technical texts.
+        </p>
+        <p>
+            With a newfound passion for computer science, I completed my master’s at Northeastern University’s Silicon Valley Campus in May 2025, where I worked as a graduate research assistant for three years with a focus on artificial intelligence and natural language processing under the guidance of Kenneth Church. Since October 2025, I have been working as a Software Engineer at Meta Fundamental AI Research (FAIR) under contract with Mindlance, where I work on a number of topics, for example distributed training setups in <a href="https://github.com/facebookresearch/fairseq2">fairseq2</a>. Previously, I built a voice-enabled, RAG-based AI assistant and designed its physical hardware and enclosure for Nonnet AI. Prior to that, I worked applying state-of-the-art encoder pretraining techniques, including RTD with GDES with the DeBERTav3 model on air traffic management (ATM) data during an internship at the NASA Aeronautics Research Institute (NARI). During my time at Northeastern, I dove headfirst into training encoder and autoregressive models on some interesting downstream tasks, including machine translation, toxicity classification, GLUE tasks, and question answering, often within the scope of multilingual applications. I have also fine tuned models on novel tasks, generating technical acronyms from long forms in order to improve technical translation through post-editing, later integrating the model into a system to fact check the resulting predictions in the scientific literature.
+        </p>
+        <p>
+            In April 2025, I was a recipient of the <a href="https://academic-honors.provost.northeastern.edu/graduate-awards/the-outstanding-global-network-student-award/">Outstanding Student</a> and Exceptional Student Leader awards at Northeastern University.
+        </p>
+        <p>
+            A list of my publications is available at the Google Scholar link below.
+        </p>
+        <h3>Other interests</h3>
+        <p>
+            As an avid hiker, I can only go a short time without itching to get back onto a mountain or trail of some kind. I have also set myself the goal of tasting an espresso from every coffee roaster in the Bay Area. In my remaining time, you may find me tinkering with edge AI on my Jetson Orin Nano or exploring yet another beach within driving distance of the Silicon Valley.
+        </p>
+    </div>
 
-    <!-- Footer -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/richard-yue-cs" class="social-btn linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=sfEhLh8AAAAJ&hl=en" class="social-btn scholar" aria-label="Google Scholar">
+            <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="https://www.github.com/rsyue" class="social-btn github" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="https://www.linkedin.com/in/richard-yue-cs">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://scholar.google.com/citations?user=sfEhLh8AAAAJ&hl=en">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.github.com/rtotheich">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted">Copyright &copy; Richard Yue 2025</p>
-                </div>
-            </div>
-        </div>
+        <p>&copy; 2026 Richard Yue. All rights reserved.</p>
     </footer>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
-
 </body>
-
 </html>
