@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Break Room</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: #4a4a4a;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #f5f3f0;
+      color: #4a4a4a;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #3d3d3d;
+      font-weight: 400;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #7a7a7a;
+      font-style: italic;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 550px;
+      min-width: 280px;
+      aspect-ratio: 16/9;
+      margin: 32px auto 48px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    article p {
+      margin-bottom: 28px;
+      text-align: justify;
+    }
+
+    .image-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 36px 0;
+      border-radius: 4px;
+    }
+
+    figcaption {
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 18px;
+    }
+
+    .image-placeholder span {
+      color: #9a9590;
+      font-size: 0.9rem;
+    }
+
+    .comments-section {
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid #d4d0c8;
+    }
+
+    .comments-section h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #3d3d3d;
+      margin-bottom: 24px;
+    }
+
+    .comment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      padding: 12px 16px;
+      border: 1px solid #d4d0c8;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      background-color: #faf9f7;
+      color: #4a4a4a;
+    }
+
+    .comment-form input:focus,
+    .comment-form textarea:focus {
+      outline: none;
+      border-color: #a8a49c;
+    }
+
+    .comment-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .captcha-box {
+      background-color: #e8e5e0;
+      padding: 20px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .captcha-checkbox {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #b0aca4;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .captcha-text {
+      font-size: 0.9rem;
+      color: #5a5a5a;
+    }
+
+    .captcha-logo {
+      margin-left: auto;
+      text-align: center;
+      color: #8a8680;
+      font-size: 0.7rem;
+    }
+
+    .captcha-logo svg {
+      width: 32px;
+      height: 32px;
+      fill: #8a8680;
+      display: block;
+      margin: 0 auto 4px;
+    }
+
+    .submit-btn {
+      align-self: flex-start;
+      padding: 12px 32px;
+      background-color: #8a8680;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .submit-btn:hover {
+      background-color: #6a6660;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #d4d0c8;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: #8a8680;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="../break_room/break_room.html" style="text-decoration:none">The Break Room</a></h1>
+      <p class="subtitle">A blog on how to spend your free time in and around Silicon Valley</p>
+    </header>
+
+    <article>
+      <div class="image-placeholder"><img src="../img/break_room/sf/skyline.jpg", width="400"></div>
+      <h2>San Francisco</h2>
+      <p>There’s so much to visit when you live in the South Bay that people often look at you askance when hearing you ventured up to San Francisco for the day. Nonetheless, let’s start by knocking out my top picks for the City by the Bay. Coming in at a surface area of 46.8 mi<sup>2</sup> (121.51 km<sup>2</sup>), it’s surprising that suburbs like San Jose are nearly four times its size (181.4 mi<sup>2</sup>  or 469 km<sup>2</sup>) and three times its population (2 million residents for the home of the Sharks vs. 803,876 San Franciscans).</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/deyoung.jpg", width="400"></div>
+      <p>What San Francisco lacks in size, it certainly makes up for in adventure. The densely packed metropolis is home to more than 50 museums, 230 parks, and over 316 designated landmarks. If you’re coming by car, consider taking <a href="https://www.sftodo.com/sanfrancisco/scenic-49-mile-drive">49 Mile Drive</a>, which will take you past <a href="https://www.sf.gov/location--san-francisco-city-hall">City Hall</a>, down windy <a href="https://www.sftravel.com/things-to-do/attractions/iconic-sf/lombard-street">Lombard Street</a>, through <a href="https://sfrecpark.org/770/Golden-Gate-Park">Golden Gate Park</a>, and amidst the narrow thoroughfares of <a href="https://secretsanfrancisco.com/chinatown-san-francisco-history/">America’s oldest Chinatown</a>. You’ll also get plenty of views of <a href="https://www.nps.gov/alca/index.htm">Alcatraz</a>, the Pacific, and the San Francisco Bay along the way.</p>
+      <div class="image-placeholder"><img src="../img/break_room/sf/lombard.jpg" width="400"></div>
+<h2>Rich’s Picks</h2>
+      <p>It’s hard to narrow down a list that I have not even been able to cover in the years I’ve lived here (nearing four at the time of this writing), but I’ll do my best.</p>
+<p>Right along the 49 Mile Drive is The Buena Vista, a diner and watering hole with its origins dating back to 1916&mdash;over 100 years of catering to the likes of Alan Shepherd (first American astronaut) and Fred Astaire*. Ironically, explains my barkeep, celebrities flocked here in days gone by to get away from gawking tourists. Today, it’s more a place where you’ll find the latter. Guidebook lore notwithstanding, this institution is the birthplace of the Irish Coffee in America in 1956. I could explain it here, but the story is better coming from <a href=" https://www.youtube.com/watch?v=QOSC5JunFpc">those who know their way around a tall whiskey glass</a>. They’ll tell it to you better than I ever could.</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/irish_coffee.jpg" height="400"></div>
+<p>Next up is the San Francisco Cable Car. An engineering feat designed by a <a href=" https://www.sfcablecar.com/history">Brit</a> in the late 19th century. To date, it is one of very few <a href=" https://californiathroughmylens.com/san-francisco-cable-cars/">moving National Historic Landmarks</a> in the United States! For a few dollars, you can experience an exhilarating ride up San Francisco’s steep hills (assuming you got in your 10,000 steps that day). Board on the driver’s side and hold on to the pole while standing if you want the best views (and breeze). You can even make it from The Buena Vista to the next stop on my list on the trolley via the Powell Hyde line! And back again. Just try and leave early to beat the crowds.</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/cable_car.gif" height="400"></div>
+      <p>San Francisco’s Chinatown is the oldest in the United States, dating back to 1850. You can find all sorts of treasures, cultural phenomena, and, of course, good eats lining the 24-block neighborhood between Kearney and Stockton. I’ve rattled off a few below:</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/chinatown_park.jpg" width="400"></div>
+<ul style="margin:5%">
+  <li>Dragon’s Gate, a traditional Chinese arch marking the entrance on Grant and Bush</li>
+  <li>The Golden Gate Fortune Cookie Factory, where your next piece of whimsical life advice is being written</li>
+  <li>Portsmouth Square, prime real estate for attending Chinese street card game and board game matches between locals</li>
+  <li>[Currently closed in Feb. 2026] The Chinese Historical Society of America, with exhibits on the history of Chinese immigration</li>
+  <li>Shops filled to the brim with Chinese art, jade, furniture, and jewelry</li>
+</ul>
+      <div class="image-placeholder"><img src="../img/break_room/sf/chinese_food.jpg" width="400"></div>
+      <p><i>Some food picks in no particular order:</i></P>
+      <p><b>Capital Café</b> for some Cantonese classics: Fried rice, Chinese broccoli in oyster sauce, Mongolian Beef, and Chow Fun, with a cup of hot Jasmine tea to top it off</p>
+      <p><b>AA Bakery</b> for your typical Chinese pastries. My grandmother always used to go for <a href=" https://eatchofood.substack.com/p/a-very-big-egg-tart-dai-daan-tat">dai daan tat</a>, <a href=" http://www.mykitchensnippets.com/2010/07/wife-biscuitsweetheart-cakelao-por-peng.html">lao por peng</a>, and some <a href=" https://www.barbarabakes.com/baked-char-sui-bao-cantonese-bbq-pork-bun/">baked bao</a>!</p>
+      <div class="image-placeholder"><img src="../img/break_room/sf/tea_pastry.jpeg" height="400"></div>
+<h2>And for your after-meal</h2>
+<p>Next door to Chinatown is <a href="https://www.sftravel.com/neighborhoods/north-beach">North Beach</a>, San Francisco’s Little Italy. I’d recommend partaking in some true Italian espresso (or an espresso-based drink if a pure shot is too bitter). There are quite a few places serving some solid Joe, but props go to <a href="https://cavalli-cafe.weeblyte.com/">Cavalli Café</a>, where you can top it off with a homemade cannoli (so long as you have a hollow leg!).</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/espresso.jpg" height="400"></div>
+<p>The final places I mention here are a bit easier to get to if you have a car. Taking the bus and/or BART might end up being a longer trip than leaving the state to the east… You’ve been warned! The quintessential San Francisco is of course the iconic <a href="https://www.goldengate.org/">Golden Gate Bridge</a>. Staying on the 49 Mile Drive, you can drive up past the Marina, bearing right at the Palace of the Arts to run along the coast and up to the Presidio. Feel free to park and take the requisite photos (but don’t leave anything in your car).</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/golden_gate.jpg" width="400"></div>
+<p>Onwards under the bridge, you can continue onwards to the west to <a href="https://www.parksconservancy.org/parks/baker-beach">Baker Beach</a>, the <a href="https://www.famsf.org/visit/legion-of-honor">Legion of Honor</a>&mdash;if you have any cultural inclination&mdash;and then <a href="https://www.nps.gov/goga/planyourvisit/landsend.htm">Lands End</a> and <a href="https://www.parksconservancy.org/parks/ocean-beach">Ocean Beach</a>. Traveling southward, turn left into Golden Gate Park and perhaps stay awhile in the <a href="https://www.japaneseteagardensf.com/">Japanese Tea Garden</a> or the <a href="https://www.famsf.org/">DeYoung Museum</a> galleries and viewing area. Pass through Crossover Drive and take 19th Avenue all the way down to San Francisco State University and back onto 280 for a relaxing drive home.</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/baker_beach.jpg" width="400"></div>
+<p>I am well aware that this is paraphrase and I have certainly missed reporting a number of places, to wit: <a href="https://pier39.com/">Pier 39</a>, the <a href="https://sfrecpark.org/facilities/facility/details/Coit-Tower-290">Coit Tower</a>, <a href="https://www.sf.gov/perfect-day-mission">the Mission</a>, and many, many more! Perhaps they will make an appearance in a follow-up! I’ll let you tell me if you want more. Until next time, keep it cool, California.</p>
+<div class="image-placeholder"><img src="../img/break_room/sf/coit.jpg" height="400"></div>
+<p><i>* Note that this article was not written by ChatGPT. Far from it. I am actually a translator and the em-dash has existed for far longer than chatbots. I seriously doubt that the word “thoroughfare” would have been generated by a large language model.</i></p>
+<p>Looking for <a href="../index.html">my professional site?</a></p>
+<p>Or maybe <a href="../index.html">the rest of <i>The Break Room</i></a></p>
+    </article>
+
+    <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <script src="https://utteranc.es/client.js"
+        repo="rsyue/break_room_comments"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+
+    <footer>
+      <p>© 2026 Richard Samuel Yue. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
