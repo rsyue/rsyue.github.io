@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Break Room - Montara North Peak</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      color: #4a4a4a;
+    }
+
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background-color: #f5f3f0;
+      color: #4a4a4a;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #3d3d3d;
+      font-weight: 400;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #7a7a7a;
+      font-style: italic;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 550px;
+      min-width: 280px;
+      aspect-ratio: 16/9;
+      margin: 32px auto 48px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    article p {
+      margin-bottom: 28px;
+      text-align: justify;
+    }
+
+    .image-placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 36px 0;
+      border-radius: 4px;
+    }
+
+    figcaption {
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 18px;
+    }
+
+    .image-placeholder span {
+      color: #9a9590;
+      font-size: 0.9rem;
+    }
+
+    .comments-section {
+      margin-top: 64px;
+      padding-top: 40px;
+      border-top: 1px solid #d4d0c8;
+    }
+
+    .comments-section h2 {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #3d3d3d;
+      margin-bottom: 24px;
+    }
+
+    .comment-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+      padding: 12px 16px;
+      border: 1px solid #d4d0c8;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      background-color: #faf9f7;
+      color: #4a4a4a;
+    }
+
+    .comment-form input:focus,
+    .comment-form textarea:focus {
+      outline: none;
+      border-color: #a8a49c;
+    }
+
+    .comment-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .captcha-box {
+      background-color: #e8e5e0;
+      padding: 20px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .captcha-checkbox {
+      width: 24px;
+      height: 24px;
+      border: 2px solid #b0aca4;
+      border-radius: 4px;
+      background: #fff;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .captcha-text {
+      font-size: 0.9rem;
+      color: #5a5a5a;
+    }
+
+    .captcha-logo {
+      margin-left: auto;
+      text-align: center;
+      color: #8a8680;
+      font-size: 0.7rem;
+    }
+
+    .captcha-logo svg {
+      width: 32px;
+      height: 32px;
+      fill: #8a8680;
+      display: block;
+      margin: 0 auto 4px;
+    }
+
+    .submit-btn {
+      align-self: flex-start;
+      padding: 12px 32px;
+      background-color: #8a8680;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .submit-btn:hover {
+      background-color: #6a6660;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #d4d0c8;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.85rem;
+      color: #8a8680;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="../break_room/break_room.html" style="text-decoration:none">The Break Room</a></h1>
+      <p class="subtitle">A blog on how to spend your free time in and around Silicon Valley</p>
+    </header>
+
+    <article>
+      <h2 style="text-align:center">Hike: Montara Mountain North Peak Loop</h2>
+      <h3 style="text-align:center">Round trip distance: 7.4 mi (11.9 km)</h3>
+      <h3 style="text-align:center">Hike Time: 4–5 hours</h3>
+      <h3 style="text-align:center">Elevation gain: 1174 ft. (358 m)</h3>
+      <div class="image-placeholder"><img src="../img/break_room/montara/first.jpg" width="400"></div>
+      <p>California is peppered with state and national parks, but sometimes it is off the beaten “trail” that you’ll find some of the best, not to mention free, experiences. Such is the case with Montara North Peak. On the meandering stretch of coastal Highway 1 between Half Moon Bay and Pacifica lies a small pull-out by the roadside. Just beyond the entrance is a hike that trades fitness and dedication for outstanding views, variety, and isolation from more crowded, popular locations (not naming any names, Mission Peak…)</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/ground_sea.jpg", width="400"></div>
+      <p>Word to the wise: If the picture below leaves you the least bit concerned about steepness or even terrain accessibility, you may wish to opt for a milder hike, of which there are many in this neck of the woods.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/steep.jpg" height="400"></div>
+      <p>Now that the disclaimer has been made, here’s what you’ll see on your 4–5 hour journey to the top of this mountain and the base of its radio tower. Parking can be a bit scarce, but I was able to leave my car across the highway in a separate pull-out area (just take care when crossing the road).</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/parking.jpg" width="400"></div>
+      <p>At the entrance you’ll be greeted with a dirt-gravel path and a reminder that you may see horses, dogs, and bikes, at least on the early portions of this trail (latter areas prove too unmanageable for that type of traversal). Before you enter, turn around and take a gander at the lovely ocean views that only this region can offer.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/entrance.jpg" width="400"></div>
+      <p>The trail then enters a dense woodland filled with Blue Gum Eucalyptus and a babbling stream. This early portion is flat and quite tranquil—you can expect the temperature to be a bit cooler here in the shade. You’ll come upon a ranch with horse boarding on your right and some parkland facilities to the left. Once you reach the clearing, it is time to begin your ascent.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/woods.jpg" width="400"></div>
+      <div class="image-placeholder"><img src="../img/break_room/montara/clearing.jpg" width="400"></div>
+      <p>At each major milestone, be sure to look back at a new view of the coastline headed back south towards Santa Cruz. The views are incredible and just keep getting better. On a clear day, you will be able to see the Farallon Islands in the distance from higher ground. Just keep going!</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/view1.jpg" width="400"></div>
+      <p>Looking north, you’ll catch unique views of Pacifica as well as recognizable landmarks in San Francisco! Among these, Baker Beach and the Golden Gate Bridge are likely to catch your eye. Unfortunately, no photo can truly do it justice.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/pacifica.jpg" width="400"></div>
+      <p>Continuing on, the landscape becomes a bit rockier but much of what is seen is not accessible from the trail. Just enjoy the sights. After some strenuous steps, you’ll reach the summit, where there is some information about the radio communication tower there and a nice spot to sit and take in the panorama.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/rocks.jpg" width="400"></div>
+      <p>Another reason to choose this hike on a sunny California day is that Montara Beach is located at its base. After making your way back down, you can give your legs a break by plopping down on the sand at this particularly scenic shoreline park and take in the sunset if you are so inclined.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/beach1.jpg" width="400"></div>
+      <div class="image-placeholder"><img src="../img/break_room/montara/beach2.jpg" width="400"></div>
+      <p>If you’re still not sold, San Francisco is a 20–30 minute drive northward, through more shimmering coastal views, rugged sediment where the road was carved, and more groves of trees and small towns. Chinatown is always hopping, and on my visit I decided to partake in a classic fried rice at Far East Café, which was delectable alongside a hot oolong tea.</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/food1.jpg" height="400"></div>
+      <div class="image-placeholder"><img src="../img/break_room/montara/food2.jpg" width="400"></div>
+      <div class="image-placeholder"><img src="../img/break_room/montara/food3.jpg" height="400"></div>
+      <div class="image-placeholder"><img src="../img/break_room/montara/food4.jpg" width="400"></div>
+      <p>Next door was a shop with antiques and other chachkas (fans, Mah Jong sets, lucky medallions).</p>
+      <div class="image-placeholder"><img src="../img/break_room/montara/trinkets.jpg" height="400"></div>
+      <p>Until the next hike, stroll, or view :)</p>
+      <p><i>Rich</i></p>
+      <p>------</p>
+      <p>Looking for <a href="../index.html">my professional site?</a></p>
+      <p>Some more <a href="san_francisco.html">San Francisco up close</a></p>
+      <p>How about a nice, light <a href="lands_end.html">hike in the city</a>?</p>
+      <p>Or maybe <a href="break_room.html">the rest of <i>The Break Room</i></a></p>
+    </article>
+
+    <section class="comments-section">
+      <h2>Leave a Comment</h2>
+      <script src="https://utteranc.es/client.js"
+        repo="rsyue/break_room_comments"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </section>
+
+    <footer>
+      <p>© 2026 Richard Samuel Yue. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
