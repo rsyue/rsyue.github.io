@@ -1,0 +1,315 @@
+/* ==========================================================================
+   The Break Room - Blog Stylesheet
+   Theme: Warm editorial / literary serif layout
+   ========================================================================== */
+
+:root {
+  --bg-color: #f5f3f0;
+  --text-color: #4a4a4a;
+  --heading-color: #3d3d3d;
+  --muted-color: #7a7a7a;
+  --border-color: #d4d0c8;
+  --link-hover: #1a1a1a;
+  --font-serif: Georgia, 'Times New Roman', serif;
+  --container-max-width: 720px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-serif);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* Page Layout Container */
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* Site Header (The Break Room branding) */
+header,
+.blog-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1,
+.blog-header h1,
+.blog-title {
+  font-size: 2.2rem;
+  color: var(--heading-color);
+  font-weight: 400;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+
+header h1 a,
+.blog-header h1 a,
+.blog-title a {
+  color: var(--heading-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+header h1 a:hover,
+.blog-header h1 a:hover,
+.blog-title a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--muted-color);
+  font-style: italic;
+  margin: 0;
+}
+
+/* Post Titles & Meta Information */
+.post-title {
+  font-size: 1.85rem;
+  color: var(--heading-color);
+  font-weight: 400;
+  text-align: center;
+  margin: 16px 0 12px;
+  letter-spacing: -0.3px;
+  line-height: 1.35;
+}
+
+.post-meta {
+  text-align: center;
+  margin-bottom: 28px;
+  color: var(--muted-color);
+  font-style: italic;
+}
+
+.post-meta p,
+.post-meta h3,
+article h3.post-meta-item {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--muted-color);
+  font-style: italic;
+  margin-bottom: 6px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Article Content & Headings */
+article {
+  margin-top: 10px;
+}
+
+article h2 {
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--heading-color);
+  margin-top: 40px;
+  margin-bottom: 16px;
+  letter-spacing: -0.3px;
+  line-height: 1.4;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--heading-color);
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+article p {
+  margin-bottom: 28px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+article ul,
+article ol {
+  margin: 20px 0 28px 28px;
+  line-height: 1.8;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+/* Video Embeds */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  min-width: 280px;
+  aspect-ratio: 16/9;
+  margin: 32px auto 48px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Images & Figures (Supports both <figure> and .image-placeholder) */
+.image-placeholder,
+figure.post-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 36px auto;
+  max-width: 100%;
+}
+
+.image-placeholder img,
+figure.post-figure img,
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+figcaption,
+.image-caption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--muted-color);
+  margin-top: 10px;
+  margin-bottom: 18px;
+  display: block;
+  width: 100%;
+}
+
+/* Dividers & Post Navigation */
+hr.post-divider,
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 40px auto;
+  width: 100%;
+}
+
+.author-signoff {
+  font-style: italic;
+  margin: 24px 0;
+}
+
+.post-nav {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-nav p {
+  margin-bottom: 12px;
+}
+
+.post-nav ul {
+  margin: 12px 0 20px 24px;
+  line-height: 1.8;
+}
+
+.post-nav li {
+  margin-bottom: 8px;
+}
+
+/* Comments Section (Utterances) */
+.comments-section {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-color);
+}
+
+.comments-section h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--heading-color);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.85rem;
+  color: #8a8680;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 36px 18px;
+  }
+
+  header h1,
+  .blog-header h1,
+  .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  article h2 {
+    font-size: 1.25rem;
+    margin-top: 30px;
+  }
+
+  article p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .video-container {
+    margin: 24px auto 36px;
+  }
+
+  .image-placeholder,
+  figure.post-figure {
+    margin: 24px auto;
+  }
+}

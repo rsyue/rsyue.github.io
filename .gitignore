@@ -1,0 +1,9 @@
+# Blog post template (kept locally for drafting new posts)
+template.html
+break_room/template.html
+
+# OS and editor artifacts
+.DS_Store
+Thumbs.db
+*~
+*.swp
